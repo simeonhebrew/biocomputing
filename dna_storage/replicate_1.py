@@ -21,9 +21,9 @@ DNA_encoding = {
 } 
 DNA_list = []
 for num in binary_list:
-    for val in list(DNA_encoding.keys()):
-        if num == val:
-            DNA_list.append(DNA_encoding.get(val))
+    for key in list(DNA_encoding.keys()):
+        if num == key:
+            DNA_list.append(DNA_encoding.get(key))
 
 DNA_str = "".join(DNA_list)
 
